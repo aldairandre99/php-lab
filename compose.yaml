@@ -1,11 +1,10 @@
-version: '3.9'
-
 services:
   app:
-    image: php:8.2-apache
+    build: .
     container_name: php_app
     volumes:
       - ./src:/var/www/html
+      - ./php.ini:/usr/local/etc/php/php.ini
     ports:
       - "8080:80"
     depends_on:
@@ -23,7 +22,7 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: secret
     ports:
-      - "3306:3306"
+      - "3307:3307"
     volumes:
       - db_data:/var/lib/mysql
     networks:
