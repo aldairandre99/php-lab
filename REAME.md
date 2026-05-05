@@ -25,11 +25,21 @@ Antes de começar, você precisa ter instalado:
 ### 1. Clonar ou acessar o projeto
 
 ```bash
-# Ir para diretorio com projecto
+git clone (repo_url)
+
+# Ir para o diretorio do projecto
 cd php-lab
 
 # Instalar e Rodar
 docker-compose up --build -d
 
+# Acessar container php
+docker exec -it php_app bash
+
+# Usar Composer dentro do container:
+composer install
+
+# Parar container
+docker-compose down
 
 ```
