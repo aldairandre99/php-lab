@@ -9,7 +9,21 @@
 </head>
 
 <body class="">
-
+    <nav style="background-color: ; padding: 50px 20px;" class="" >
+        <ul style="display:flex; flex-direction: row; width:  auto; justify-content: space-between;">
+            <li>
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="pages/about.php" rel="noopener noreferrer">
+                    Sobre
+                </a>
+            </li>
+            <li>Footer</li>
+        </ul>
+    </nav>
     <?php
     echo "Olá, eu sou um script PHP! text";
     ?>

@@ -9,12 +9,27 @@
 </head>
 
 <body>
-    <h1 class="flex justify-center text-3xl font-bold w-full  ">
+    <nav style="background-color: ; padding: 50px 20px;" class="">
+        <ul style="display:flex; flex-direction: row; width:  auto; justify-content: space-between;">
+            <li>
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="pages/about.php" rel="noopener noreferrer">
+                    Sobre
+                </a>
+            </li>
+            <li>Footer</li>
+        </ul>
+    </nav>
+    <h1 class="flex justify-center text-3xl font-bold w-full">
         Sobre nos.
     </h1>
     <?php
-        date_default_timezone_set("Africa/Luanda"); 
-        echo "<p>A data e hora atuais em Luanda é: </p> ".date("d/m/Y H:i:s A T ");
+    date_default_timezone_set("Africa/Luanda");
+    echo "<p>A data e hora atuais em Luanda é: </p> " . date("d/m/Y H:i:s A T ");
     ?>
 </body>
 
